@@ -23,9 +23,9 @@ namespace eCommerce.DAL.Migrations
             //
             context.Products.AddOrUpdate(
               p => p.Name,
-              new Product { Name = "Products", Id = 1 },
-              new Product { Name = "Productn", Id = 2 },
-              new Product { Name = "Product" , Id = 3}
+              new Product { Name = "Products", Id = 1,Price = 36.24 },
+              new Product { Name = "Productn", Id = 2,Price = 36.24 },
+              new Product { Name = "Product" , Id = 3,Price = 36.24}
             );
             
         }
