@@ -1,0 +1,22 @@
+﻿@model IEnumerable<eCommerce.Core.Product>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in @Model)
+{
+    
+    <div>
+
+        <div>
+            Product Id : @item.Id
+        </div>
+
+        <div>
+            Product Name : @item.Name
+        </div>
+    </div>
+    
+    
+}

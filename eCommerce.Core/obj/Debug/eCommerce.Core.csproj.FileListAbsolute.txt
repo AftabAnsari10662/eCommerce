@@ -1,0 +1,5 @@
+c:\dev\Git\eCommerce\eCommerce.Core\bin\Debug\eCommerce.Core.dll
+c:\dev\Git\eCommerce\eCommerce.Core\bin\Debug\eCommerce.Core.pdb
+c:\dev\Git\eCommerce\eCommerce.Core\obj\Debug\eCommerce.Core.csprojResolveAssemblyReference.cache
+c:\dev\Git\eCommerce\eCommerce.Core\obj\Debug\eCommerce.Core.dll
+c:\dev\Git\eCommerce\eCommerce.Core\obj\Debug\eCommerce.Core.pdb
