@@ -1,6 +1,5 @@
 namespace eCommerce.DAL.Migrations
 {
-    using eCommerce.Core;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -10,24 +9,14 @@ namespace eCommerce.DAL.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "eCommerce.DAL.eCommerceDb";
+            AutomaticMigrationsEnabled = false;
+            Database.SetInitializer(new eCommerceDatabaseInitializer());
         }
 
         protected override void Seed(eCommerce.DAL.eCommerceDb context)
         {
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            context.Products.AddOrUpdate(
-              p => p.Name,
-              new Product { Name = "Products", Id = 1,Price = 36.24 },
-              new Product { Name = "Productn", Id = 2,Price = 36.24 },
-              new Product { Name = "Product" , Id = 3,Price = 36.24}
-            );
-            
+            eCommerceDatabaseInitializer.GetCategories().ForEach(c => context.Categories.Add(c));
+            eCommerceDatabaseInitializer.GetProducts().ForEach(p => context.Products.Add(p));
         }
     }
 }

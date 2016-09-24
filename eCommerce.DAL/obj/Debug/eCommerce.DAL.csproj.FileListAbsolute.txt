@@ -10,5 +10,3 @@ c:\dev\Git\eCommerce\eCommerce.DAL\bin\Debug\EntityFramework.SqlServer.xml
 c:\dev\Git\eCommerce\eCommerce.DAL\obj\Debug\eCommerce.DAL.csprojResolveAssemblyReference.cache
 c:\dev\Git\eCommerce\eCommerce.DAL\obj\Debug\eCommerce.DAL.dll
 c:\dev\Git\eCommerce\eCommerce.DAL\obj\Debug\eCommerce.DAL.pdb
-C:\dev\Git\eCommerce\eCommerce.DAL\obj\Debug\eCommerce.DAL.Migrations.InitialCreate.resources
-C:\dev\Git\eCommerce\eCommerce.DAL\obj\Debug\eCommerce.DAL.csproj.GenerateResource.Cache
